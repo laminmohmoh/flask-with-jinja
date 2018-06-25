@@ -25,11 +25,11 @@
     <!-- theme-color -->
     <meta name="theme-color" content="#fff" />
     <!-- end-theme-color -->
-    <script src="{{ url_for('static',fiename='jquery.min.js') }}"></script>
-    <script src="{{ url_for('static',filename='skel.min.js') }}"></script>
-    <script src="{{ url_for('static',filenamr=util.js') }}"></script>
-    <script src="{{ url_for('static',filename=respond.min.js') }}"></script>
-    <script src="{{ url_for('static',filename=responsive.js') }}"></script>
+    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='skel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='util.js') }}"></script>
+    <script src="{{ url_for('static', filename='respond.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='responsive.js') }}"></script>
     <link rel="stylesheet" href="{{ url_for('static',filename='main.css') }}" />
 </head>
 
@@ -39,9 +39,9 @@
 
         <article id="home" class="panel special" style="display: flex;">
 
-		<div class="image" style="background-image:{{ url_for('static',filenmae=p1.jpg') }}; background-position: center center;">
+		<div class="image" style="background-image:{{ url_for('static',filename='p1.jpg') }}; background-position: center center;">
 
-			<img src="{{ url_for('static',filename=p1.jpg') }}" alt="" data-position="center center" style="display: none;">
+			<img src="{{ url_for('static',filename='p1.jpg') }}" alt="" data-position="center center" style="display: none;">
 
             </div>
 
@@ -100,8 +100,8 @@
 
         <article id="work" class="panel secondary inactive" style="display: none;">
 
-		<div class="image" style="background-image:{{ url_for('static',filename=p3.jpg') }};background-position: center center;">
-			<img src="{{ url_for('static',filename='p3.jpg') }}" alt="" data-position="center center" style="display: none;">
+		<div class="image" style="background-image:{{ url_for('static', filename='p3.jpg') }};background-position: center center;">
+			<img src="{{ url_for('static', filename='p3.jpg') }}" alt="" data-position="center center" style="display: none;">
             </div>
             <div class="content">
                 <ul class="actions spinX">
@@ -143,8 +143,8 @@
 
         <article id="about" class="panel secondary inactive" style="display: none;">
 
-		<div class="image" style="background-image:{{ url_for('static',filename='p3.jpg') }}; background-position: center center;">
-			<img src="{{ url_for('static',fiename='p3.jpg') }}" alt="" data-position="center center" style="display: none;">
+		<div class="image" style="background-image:{{ url_for('static', filename='p3.jpg') }}; background-position: center center;">
+			<img src="{{ url_for('static', filename='p3.jpg') }}" alt="" data-position="center center" style="display: none;">
             </div>
 
             <div class="content">
@@ -186,9 +186,9 @@
 
         <article id="contact" class="panel secondary inactive" style="display: none;">
 
-		<div class="image" style="background-image:{{ url_for('static',filename=p2.jpg') }}; background-position: center bottom;">
+		<div class="image" style="background-image:{{ url_for('static', filename='p2.jpg') }}; background-position: center bottom;">
 
-                <img src="images/p2.jpg" alt="" data-position="bottom center" style="display: none;">
+			<img src="{{ url_for('static', filename='p2.jpg') }}" alt="" data-position="bottom center" style="display: none;">
 
             </div>
             <div class="content">
@@ -207,7 +207,7 @@
 
                     </header>
 
-		    <form name="contactform" method="post" action="{{ url_for('static',filename='send-email.php') }}">
+		    <form name="contactform" method="post" action="{{ url_for('static', filename='send-email.php') }}">
 
                         <div class="field half first">
 
@@ -253,7 +253,7 @@
         </footer>
 
     </div>
-    <script src="{{ url_for('static',filename='buttons-navigate.js') }}"></script>
-    <script src="{{ url_for('static',filename='web-share.js') }}"></script>
+    <script src="{{ url_for('static', filename='buttons-navigate.js') }}"></script>
+    <script src="{{ url_for('static', filename='web-share.js') }}"></script>
 </body>
 </html>
